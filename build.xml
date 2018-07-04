@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<!-- Configuration of the Ant build system to generate a Jar file --> 
+<project name="HTTP Smuggler" default="CreateJar">
+	<property name="projectHome" location="." />
+	<target name="CreateJar" description="Create Jar file">
+		<jar destfile="${projectHome}/httpsmuggler.jar" basedir="${projectHome}/bin">
+			<!--<zipgroupfileset dir="libs/" includes="*.jar" excludes=""/>-->
+			
+			<fileset dir=".">
+			    <include name="**/resources//**"/>
+			</fileset>
+		</jar>
+	</target>
+</project>
