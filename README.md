@@ -6,6 +6,11 @@ The initial release (v0.1) only supports the Encoding capability that can be qui
 See the references for more details.
 
 Next versions will include more techniques and possible bug fixes.
+# Example Screenshots
+![AppSec EU 18 - example1](screenshots/AppSecEU18-example1.jpg?raw=true "AppSec EU 18 - example1")
+
+![AppSec EU 18 - example2](screenshots/AppSecEU18-example2.jpg?raw=true "AppSec EU 18 - example2")
+
 
 # References:
 * https://appseceurope2018a.sched.com/event/EgXc/waf-bypass-techniques-using-http-standard-and-web-servers-behavior
