@@ -8,6 +8,7 @@ See the references for more details.
 Next versions will include more techniques and possible bug fixes.
 
 # References:
+* https://appseceurope2018a.sched.com/event/EgXc/waf-bypass-techniques-using-http-standard-and-web-servers-behavior
 * https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/september/rare-aspnet-request-validation-bypass-using-request-encoding/
 * https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/september/rare-aspnet-request-validation-bypass-using-request-encoding/
 
