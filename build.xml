@@ -1,14 +1,35 @@
 <?xml version="1.0" ?>
-<!-- Configuration of the Ant build system to generate a Jar file --> 
-<project name="HTTP Smuggler" default="CreateJar">
-	<property name="projectHome" location="." />
-	<target name="CreateJar" description="Create Jar file">
-		<jar destfile="${projectHome}/httpsmuggler.jar" basedir="${projectHome}/bin">
-			<!--<zipgroupfileset dir="libs/" includes="*.jar" excludes=""/>-->
-			
-			<fileset dir=".">
-			    <include name="**/resources//**"/>
-			</fileset>
-		</jar>
+<!-- Configuration of the Ant build system to generate a Jar file -->
+<project name="HTTP Smuggler" default="dist">
+	<property name="src" location="src"/>
+	<property name="build" location="build"/>
+	<property name="dist" location="dist"/>
+
+	<target name="clean">
+		<delete dir="${build}"/>
+	</target>
+
+	<target name="init">
+		<!-- Create the time stamp -->
+		<tstamp/>
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${build}"/>
+	</target>
+
+
+	<target name="compile" depends="init" description="compile the source">
+		<!-- Compile the Java code from ${src} into ${build} -->
+		<javac srcdir="${src}" destdir="${build}"/>
+		<copy todir="${build}/resources">
+            <fileset dir="${src}/resources"/>
+        </copy>
+	</target>
+
+	<target name="dist" depends="compile" description="generate the distribution">
+		<!-- Create the distribution directory -->
+		<mkdir dir="${dist}/lib"/>
+
+		<!-- Put everything in ${build} into the burp-httpsmuggler-${DSTAMP}.jar file -->
+		<jar jarfile="${dist}/lib/burp-httpsmuggler-${DSTAMP}.jar" basedir="${build}" />
 	</target>
 </project>
