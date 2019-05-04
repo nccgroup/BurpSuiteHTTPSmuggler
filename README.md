@@ -14,7 +14,7 @@ Next versions will include more techniques and possible bug fixes.
 
 # References:
 * https://appseceurope2018a.sched.com/event/EgXc/waf-bypass-techniques-using-http-standard-and-web-servers-behavior
-* https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/september/rare-aspnet-request-validation-bypass-using-request-encoding/
+* https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/august/request-encoding-to-bypass-web-application-firewalls/
 * https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/september/rare-aspnet-request-validation-bypass-using-request-encoding/
 
 Released under AGPL v3.0 see LICENSE for more information
